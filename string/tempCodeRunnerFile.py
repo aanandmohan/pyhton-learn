@@ -1,0 +1,1 @@
+print(" ".join(l1))
