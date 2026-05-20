@@ -20,11 +20,11 @@ s1=" ".join(l1)
 print(s1)
 # print(" ".join(l1))'''
 
-'''str="python"
+str="python"
 print(str.center(20))
 str1="vishnukANT "
 print(str1.center(20,"%"))
-print(len(str1))'''
+print(len(str1))
 
 '''str="python"
 print(str.ljust(20,"*"))
@@ -33,7 +33,7 @@ str1="python is a lanaguage"
 print(str1.endswith("e"))
 print(str1.rjust(20,"*"))'''
 
-str="bahubali"
+'''str="bahubali"
 print(sorted(str))
 result=" ".join(sorted(str))
-print(result)
+print(result)'''

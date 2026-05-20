@@ -1,5 +1,11 @@
 print()
-l1=["hello","guyes","this ","is"]
-s1=" ".join(l1)
-print(s1)
-# print(" ".join(l1))
+i=n-1
+while i>=0:
+    print(str[i],end="")
+    i-=1
+print()
+i=-1
+while i>=-n:
+    print(str[i],end="")
+    i-=1
+print()
