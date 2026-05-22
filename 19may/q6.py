@@ -12,4 +12,5 @@ for i in sorted(ch):
     res+=i
 for i in sorted(digit):
     res+=i
+#res=sorted(ch).join()+sorted(digit).join ye maine apne smjhne ke liye kiya tha 
 print(res)
