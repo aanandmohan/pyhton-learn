@@ -1,12 +1,11 @@
 s=input("enter string ")
 i=0
-res=''
+res=""
 while i<len(s):
+    ch=s[i]
     j=i+1
-    while s[i]==s[j] and len(s)-1:
+    while j<len(s) and ch ==s[j]:
         j+=1
-    res=res+s[i]
-    i+=1
+    res+=ch
+    i=j
 print(res)
-
-
