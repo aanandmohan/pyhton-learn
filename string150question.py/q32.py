@@ -11,5 +11,5 @@ for i in range(0,len(words)):
                 count+=1
                 words[j]=0
             j+=1
-        res+=ch+" "
-print("the reuslt is ->",res)
+        print(ch,"->",count)
+        
