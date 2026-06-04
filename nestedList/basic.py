@@ -14,7 +14,17 @@ a=[
 #         print(j,end=" ")
 #     print()
 
-for i in range(len(a)):
-    for j in range(len(a[i])):
-        print(a[i][j],end=" ")
+# for i in range(len(a)):
+#     for j in range(len(a[i])):
+#         print(a[i][j],end=" ")
+#     print()
+# a.append(["virat","rcb"])
+# a[3].remove("rcb")
+# a.pop(3)
+# print(a)
+print(a)
+print()
+for row in a:
+    for v in row:
+        print(v,end=' ')
     print()

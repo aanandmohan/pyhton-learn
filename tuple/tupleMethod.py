@@ -1,0 +1,5 @@
+t=(10,20,30,50,70,40,10,560,-1)
+print(t.count(10))
+print(t.index(560))
+print(max(t))
+print(min(t))

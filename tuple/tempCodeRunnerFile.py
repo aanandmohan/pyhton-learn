@@ -1,0 +1,8 @@
+t=(1,2,3,4)
+t1=tuple([1,2,3])
+print(t)
+print(type(t))
+print(type(t1))
+print(t[0])
+print(t[-1])
+print(t[1:3])
