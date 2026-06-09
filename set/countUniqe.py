@@ -1,0 +1,7 @@
+s=input("enter string ")
+k=s.split()
+t=set(k)
+print(len(t))
+another=list(t)
+print(t)
+print(another)
