@@ -1,1 +1,1 @@
-print(student["salary"])
+print(a[i:j])
