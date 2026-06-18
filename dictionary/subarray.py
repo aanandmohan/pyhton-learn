@@ -7,10 +7,9 @@ for i in range(len(a)):
         # print(a[i:j])
         t=sum(a[i:j+1])
         if t>=tar :
-            if len(a[i:j])>min:
-                min=len(a[i:j])
-                z=a[i:j]
-
-        
+            if len(a[i:j+1])<min:
+                min=len(a[i:j+1])
+                z=a[i:j+1]
+    
 print(min)
 print(z)

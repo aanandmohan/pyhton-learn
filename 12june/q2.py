@@ -222,5 +222,11 @@ while True:
                 if v["course"]==cour:
                     print(k,":",v)
         case 8:
-            
+            cour=input("enter city ")
+            for k,v in d.items():
+                if v["course"]==cour:
+                    print(k,":",v)
+        
+
+
 
