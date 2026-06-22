@@ -1,71 +1,66 @@
-def registration(name,email,mobile,/):
-    print("Name :",name)
-    print("Email :",email)
-    print("Mobile :",mobile)
-    
+marks=[]
+def adddetail(name,roll):
+    print("Name is ",name)
+    print("roll number is ",roll)
+    for i in range(5):
+        x=int(input(f'enter marks of {i}' ))
+        marks.append(x)
 
-def information(*,product,price,category):
-    print("Product Name :",product)
-    print("Price :",price)
-    print("Category :",category)
-    return
+name=input("enter name ")
+roll=int(input("enter roll number "))
+adddetail(name,roll)
 
-def default(product="laptop",price=55000):
-    print("Product Name :",product)
-    print("Price :",price)
-    return 
+def total():
+    s=0
+    for i in marks:
+        s+=i
+    return s
 
-def multiplevalue(*awrg):
-    print("Total Bill Amount :",sum(awrg))
+t=total()
+print(t)
 
-def detail(**kwargs):
-    for key,value in kwargs.items():
-        print(key,value)
-    
+def percentage(x):
+    l=(x/500)*100
+    return l
+per=percentage(t)
+print(per)
 
-def main():
+def grade(per):
+    if per>=90:
+        print("A grade")
+    elif per>=50 or per<=89:
+        print("B garde ")
+    else:
+        print("fail")
+grade(per)
 
-    while True:
-        print("===Mean===")
-        print("1. Customer Registration ")
-        print("2. Product Information")
-        print("3. Generate Invoice")
-        print("4. Add Multiple Products")
-        print("5. Display Customer Profile")
-        print("6. Exit")
-       
-        choice=int(input("Enter the Choice :"))
+def high():
+    high=0
+    for i in marks:
+        if i>high:
+            high=i
+    return high
+print('the hiighet numbr is ',high())
+def lower():
+    low=max(marks)
+    for i in marks:
+        if i <low:
+            low=i
+    return low
+print('the lower numbr is ',lower())
+def result():
+    print("name is ",name)
+    print("Roll number is ",roll)
+    for i in range(1,len(marks)):
+        print(f"the marks of subject {i}",marks[i])
 
-        match choice:
-            case 1:
-                print()
-                name=input("Enter Name :")
-                email=input("Enter Email :")
-                mobile=input("Enter Mobile :")
-                registration(name,email,mobile)
-                print("Customer Registered Successfully")
-            case 2:
-                print()
-                information(product="laptop",price=55000,category="Electronics")
-                print("Product Detail Displayed Successfully")
-            case 3:
-                print()
-                print(default())
-                print("Invoice Generated Successfully")
-            case 4:
-                print()
-                print(multiplevalue(100,200,300,400))
-        
-            case 5:
-                print()
-                print(detail(name="deepika",age=30,address="chennai"))
+    print("the total marks is ",t)
+    print("the percentage is ",per)
+    grade(per)
+    print("the highest marks is ",high())
+    print("the lowest marks is ",lower())
 
-            case 6:
-                print()
-                print("Thank You . Program Terminated. ")
-                break
+            
 
-            case _:
-                print("Invalid choice")
-main()
+result()
 
